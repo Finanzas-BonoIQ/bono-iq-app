@@ -1,0 +1,63 @@
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: #0F111A;
+  color: #E0E0E0;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #4DD0E1 0%, #FF4081 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.input-field {
+  transition: all 0.3s ease-in-out;
+}
+
+.input-field:focus {
+  box-shadow: 0 0 0 2px #4DD0E1;
+}
+
+.btn-primary {
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(90deg, #4DD0E1 0%, #26C6DA 100%);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(77, 208, 225, 0.3);
+}
+
+.btn-secondary {
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(90deg, #FF4081 0%, #F06292 100%);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 64, 129, 0.3);
+}
+
+.card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #1C1F2A;
+  border: 1px solid #2C2F3A;
+}
+
+.password-toggle {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.password-toggle:hover {
+  color: #4DD0E1;
+}
+
+.social-icon {
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+}

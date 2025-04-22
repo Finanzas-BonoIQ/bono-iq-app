@@ -1,0 +1,344 @@
+<body class="flex h-screen overflow-hidden">
+<!-- Sidebar -->
+<div class="sidebar w-64 flex-shrink-0 flex flex-col">
+  <div class="flex items-center justify-center h-16 px-4 border-b border-gray-800">
+    <div class="flex items-center">
+      <fa-icon class="text-2xl mr-2 text-primary-500" [icon]="faRobot" style="color: var(--primary);"></fa-icon>
+      <span class="text-xl font-semibold">BonoIQ</span>
+    </div>
+  </div>
+  <div class="flex-1 overflow-y-auto">
+    <nav class="px-2 py-4">
+      <div class="space-y-1">
+        <a href="#" class="nav-item active group flex items-center px-3 py-2 text-sm font-medium rounded-md">
+          <i class="fas fa-tachometer-alt mr-3 text-gray-400 group-hover:text-primary-500"></i>
+          Dashboard
+        </a>
+        <a href="#" class="nav-item group flex items-center px-3 py-2 text-sm font-medium rounded-md">
+          <i class="fas fa-comment-dots mr-3 text-gray-400 group-hover:text-primary-500"></i>
+          Chat
+        </a>
+        <a href="#" class="nav-item group flex items-center px-3 py-2 text-sm font-medium rounded-md">
+          <i class="fas fa-cog mr-3 text-gray-400 group-hover:text-primary-500"></i>
+          Settings
+        </a>
+        <a href="#" class="nav-item group flex items-center px-3 py-2 text-sm font-medium rounded-md">
+          <i class="fas fa-chart-line mr-3 text-gray-400 group-hover:text-primary-500"></i>
+          Analytics
+        </a>
+        <a href="#" class="nav-item group flex items-center px-3 py-2 text-sm font-medium rounded-md">
+          <i class="fas fa-users mr-3 text-gray-400 group-hover:text-primary-500"></i>
+          Users
+        </a>
+      </div>
+      <div class="mt-8">
+        <h3 class="px-3 text-xs font-semibold text-gray-500 uppercase tracking-wider">
+          Tools
+        </h3>
+        <div class="mt-1 space-y-1">
+          <a href="#" class="nav-item group flex items-center px-3 py-2 text-sm font-medium rounded-md">
+            <i class="fas fa-magic mr-3 text-gray-400 group-hover:text-primary-500"></i>
+            AI Generator
+          </a>
+          <a href="#" class="nav-item group flex items-center px-3 py-2 text-sm font-medium rounded-md">
+            <i class="fas fa-image mr-3 text-gray-400 group-hover:text-primary-500"></i>
+            Media Library
+          </a>
+          <a href="#" class="nav-item group flex items-center px-3 py-2 text-sm font-medium rounded-md">
+            <i class="fas fa-database mr-3 text-gray-400 group-hover:text-primary-500"></i>
+            Data Explorer
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="p-4 border-t border-gray-800">
+    <div class="flex items-center">
+      <div class="flex-shrink-0">
+        <img class="h-10 w-10 rounded-full" src="https://ui-avatars.com/api/?name=Admin+User&background=1C1F2A&color=4DD0E1" alt="User avatar">
+      </div>
+      <div class="ml-3">
+        <p class="text-sm font-medium">Admin User</p>
+        <p class="text-xs text-gray-400">admin&#64;example.com</p>
+      </div>
+    </div>
+    <button class="mt-3 w-full flex items-center justify-center px-4 py-2 border border-gray-700 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-800">
+      <i class="fas fa-sign-out-alt mr-2"></i>
+      Sign out
+    </button>
+  </div>
+</div>
+
+<!-- Main content -->
+<div class="flex-1 flex flex-col overflow-hidden">
+  <!-- Top navigation -->
+  <header class="bg-surface-800 border-b border-gray-800">
+    <div class="flex items-center justify-between px-6 py-3">
+      <div class="flex items-center">
+        <h1 class="text-xl font-semibold">Dashboard</h1>
+      </div>
+      <div class="flex items-center space-x-4">
+        <div class="relative">
+          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+            <i class="fas fa-search text-gray-400"></i>
+          </div>
+          <input type="text" class="input-field block w-full pl-10 pr-3 py-2 rounded-md" placeholder="Search...">
+        </div>
+        <button class="p-1 rounded-full text-gray-400 hover:text-gray-200 focus:outline-none">
+          <i class="fas fa-bell"></i>
+          <span class="absolute top-0 right-0 h-2 w-2 rounded-full bg-red-500"></span>
+        </button>
+        <button class="p-1 rounded-full text-gray-400 hover:text-gray-200 focus:outline-none">
+          <i class="fas fa-question-circle"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content area -->
+  <main class="flex-1 overflow-y-auto p-6 bg-primary-900">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+      <!-- Stats Card 1 -->
+      <div class="card p-6 glow-effect">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm font-medium text-gray-400">Total Queries</p>
+            <p class="mt-1 text-3xl font-semibold">1,248</p>
+            <p class="mt-2 text-xs text-green-400 flex items-center">
+              <i class="fas fa-arrow-up mr-1"></i> 12% from last month
+            </p>
+          </div>
+          <div class="p-3 rounded-full bg-opacity-10 bg-primary-500">
+            <i class="fas fa-comment-alt text-xl" style="color: var(--primary);"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Card 2 -->
+      <div class="card p-6 glow-effect">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm font-medium text-gray-400">Active Users</p>
+            <p class="mt-1 text-3xl font-semibold">864</p>
+            <p class="mt-2 text-xs text-green-400 flex items-center">
+              <i class="fas fa-arrow-up mr-1"></i> 8% from last week
+            </p>
+          </div>
+          <div class="p-3 rounded-full bg-opacity-10 bg-primary-500">
+            <i class="fas fa-users text-xl" style="color: var(--primary);"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Card 3 -->
+      <div class="card p-6 glow-effect">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm font-medium text-gray-400">Response Time</p>
+            <p class="mt-1 text-3xl font-semibold">1.2s</p>
+            <p class="mt-2 text-xs text-red-400 flex items-center">
+              <i class="fas fa-arrow-down mr-1"></i> 0.3s slower than average
+            </p>
+          </div>
+          <div class="p-3 rounded-full bg-opacity-10 bg-primary-500">
+            <i class="fas fa-clock text-xl" style="color: var(--primary);"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main content row -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+      <!-- Chart section -->
+      <div class="lg:col-span-2">
+        <div class="card p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-lg font-semibold">Query Analytics</h2>
+            <div class="flex space-x-2">
+              <button class="px-3 py-1 text-xs rounded-md bg-gray-700 text-gray-300">Day</button>
+              <button class="px-3 py-1 text-xs rounded-md bg-gray-700 text-gray-300">Week</button>
+              <button class="px-3 py-1 text-xs rounded-md bg-primary-500 text-gray-900 font-medium">Month</button>
+            </div>
+          </div>
+          <div class="chart-container">
+            <!-- This would be replaced with an actual chart library in production -->
+            <div class="flex items-end h-64 mt-6 space-x-1">
+              <div class="flex-1 bg-primary-500 bg-opacity-50 rounded-t-sm" style="height: 10%"></div>
+              <div class="flex-1 bg-primary-500 bg-opacity-50 rounded-t-sm" style="height: 30%"></div>
+              <div class="flex-1 bg-primary-500 bg-opacity-50 rounded-t-sm" style="height: 50%"></div>
+              <div class="flex-1 bg-primary-500 bg-opacity-50 rounded-t-sm" style="height: 70%"></div>
+              <div class="flex-1 bg-primary-500 bg-opacity-50 rounded-t-sm" style="height: 90%"></div>
+              <div class="flex-1 bg-primary-500 bg-opacity-50 rounded-t-sm" style="height: 60%"></div>
+              <div class="flex-1 bg-primary-500 rounded-t-sm" style="height: 100%"></div>
+            </div>
+            <div class="flex justify-between text-xs text-gray-400 mt-2">
+              <span>Mon</span>
+              <span>Tue</span>
+              <span>Wed</span>
+              <span>Thu</span>
+              <span>Fri</span>
+              <span>Sat</span>
+              <span>Sun</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent activity -->
+      <div class="card p-6">
+        <h2 class="text-lg font-semibold mb-4">Recent Activity</h2>
+        <div class="space-y-4">
+          <div class="flex items-start">
+            <div class="flex-shrink-0 mt-1">
+              <div class="h-8 w-8 rounded-full bg-gray-700 flex items-center justify-center">
+                <i class="fas fa-user text-xs text-gray-300"></i>
+              </div>
+            </div>
+            <div class="ml-3">
+              <p class="text-sm font-medium">User123 completed onboarding</p>
+              <p class="text-xs text-gray-400">2 minutes ago</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 mt-1">
+              <div class="h-8 w-8 rounded-full bg-gray-700 flex items-center justify-center" style="background-color: rgba(102, 187, 106, 0.2);">
+                <i class="fas fa-check text-xs" style="color: var(--success);"></i>
+              </div>
+            </div>
+            <div class="ml-3">
+              <p class="text-sm font-medium">System update completed</p>
+              <p class="text-xs text-gray-400">15 minutes ago</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 mt-1">
+              <div class="h-8 w-8 rounded-full bg-gray-700 flex items-center justify-center" style="background-color: rgba(239, 83, 80, 0.2);">
+                <i class="fas fa-exclamation text-xs" style="color: var(--error);"></i>
+              </div>
+            </div>
+            <div class="ml-3">
+              <p class="text-sm font-medium">API request failed</p>
+              <p class="text-xs text-gray-400">1 hour ago</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="flex-shrink-0 mt-1">
+              <div class="h-8 w-8 rounded-full bg-gray-700 flex items-center justify-center" style="background-color: rgba(77, 208, 225, 0.2);">
+                <i class="fas fa-robot text-xs" style="color: var(--primary);"></i>
+              </div>
+            </div>
+            <div class="ml-3">
+              <p class="text-sm font-medium">New AI model trained</p>
+              <p class="text-xs text-gray-400">3 hours ago</p>
+            </div>
+          </div>
+        </div>
+        <button class="mt-4 w-full text-center text-sm text-primary-500 hover:text-primary-400 font-medium">
+          View all activity
+        </button>
+      </div>
+    </div>
+
+    <!-- Bottom row -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <!-- Recent queries -->
+      <div class="card p-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-lg font-semibold">Recent Queries</h2>
+          <button class="text-sm text-primary-500 hover:text-primary-400 font-medium">
+            View all
+          </button>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="min-w-full divide-y divide-gray-700">
+            <thead>
+            <tr>
+              <th class="px-4 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">User</th>
+              <th class="px-4 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Query</th>
+              <th class="px-4 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Status</th>
+            </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-700">
+            <tr>
+              <td class="px-4 py-3 whitespace-nowrap text-sm font-medium">user_456</td>
+              <td class="px-4 py-3 text-sm text-gray-400 truncate max-w-xs">How to integrate the API with my application...</td>
+              <td class="px-4 py-3 whitespace-nowrap">
+                <span class="px-2 py-1 text-xs rounded-full bg-opacity-20 bg-green-500 text-green-400">Completed</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 whitespace-nowrap text-sm font-medium">dev_789</td>
+              <td class="px-4 py-3 text-sm text-gray-400 truncate max-w-xs">Troubleshooting error code 502 when...</td>
+              <td class="px-4 py-3 whitespace-nowrap">
+                <span class="px-2 py-1 text-xs rounded-full bg-opacity-20 bg-yellow-500 text-yellow-400">Pending</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 whitespace-nowrap text-sm font-medium">admin_001</td>
+              <td class="px-4 py-3 text-sm text-gray-400 truncate max-w-xs">Generate report for last quarter's user...</td>
+              <td class="px-4 py-3 whitespace-nowrap">
+                <span class="px-2 py-1 text-xs rounded-full bg-opacity-20 bg-primary-500 text-primary-400">Processing</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 whitespace-nowrap text-sm font-medium">guest_123</td>
+              <td class="px-4 py-3 text-sm text-gray-400 truncate max-w-xs">What are the system requirements for...</td>
+              <td class="px-4 py-3 whitespace-nowrap">
+                <span class="px-2 py-1 text-xs rounded-full bg-opacity-20 bg-green-500 text-green-400">Completed</span>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Quick actions -->
+      <div class="card p-6">
+        <h2 class="text-lg font-semibold mb-4">Quick Actions</h2>
+        <div class="grid grid-cols-2 gap-4">
+          <button class="btn-primary p-4 rounded-lg flex flex-col items-center justify-center">
+            <i class="fas fa-plus-circle text-2xl mb-2"></i>
+            <span>New Query</span>
+          </button>
+          <button class="btn-secondary p-4 rounded-lg flex flex-col items-center justify-center">
+            <i class="fas fa-chart-pie text-2xl mb-2"></i>
+            <span>Analytics</span>
+          </button>
+          <button class="bg-gray-700 p-4 rounded-lg flex flex-col items-center justify-center hover:bg-gray-600 transition">
+            <i class="fas fa-cog text-2xl mb-2" style="color: var(--primary);"></i>
+            <span>Settings</span>
+          </button>
+          <button class="bg-gray-700 p-4 rounded-lg flex flex-col items-center justify-center hover:bg-gray-600 transition">
+            <i class="fas fa-user-shield text-2xl mb-2" style="color: var(--accent);"></i>
+            <span>Admin</span>
+          </button>
+        </div>
+        <div class="mt-6">
+          <h3 class="text-sm font-medium text-gray-400 mb-2">System Status</h3>
+          <div class="flex items-center space-x-2 mb-1">
+            <span class="text-sm">API Response</span>
+            <div class="flex-1 h-2 rounded-full bg-gray-700 overflow-hidden">
+              <div class="h-full rounded-full" style="width: 95%; background-color: var(--success);"></div>
+            </div>
+            <span class="text-xs text-gray-400">95%</span>
+          </div>
+          <div class="flex items-center space-x-2 mb-1">
+            <span class="text-sm">Database</span>
+            <div class="flex-1 h-2 rounded-full bg-gray-700 overflow-hidden">
+              <div class="h-full rounded-full" style="width: 87%; background-color: var(--success);"></div>
+            </div>
+            <span class="text-xs text-gray-400">87%</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="text-sm">AI Model</span>
+            <div class="flex-1 h-2 rounded-full bg-gray-700 overflow-hidden">
+              <div class="h-full rounded-full" style="width: 72%; background-color: var(--warning);"></div>
+            </div>
+            <span class="text-xs text-gray-400">72%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
