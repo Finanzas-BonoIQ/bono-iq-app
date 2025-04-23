@@ -1,4 +1,7 @@
-
+.logo-image {
+  height: 40px;
+  width: 40px;
+}
 
 body {
   font-family: 'Inter', sans-serif;
